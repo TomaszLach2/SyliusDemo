@@ -33,3 +33,8 @@ services:
     App\Controller\:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
+        
+    SpearDevs\SyliusPushNotificationsPlugin\Manager\UserSubscriptionManager:
+        class: SpearDevs\SyliusPushNotificationsPlugin\Manager\UserSubscriptionManager
+        tags:
+            - { name: bentools_webpush.subscription_manager, user_class: 'App\Entity\User\ShopUser' }

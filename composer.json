@@ -23,13 +23,21 @@
             "name": "Community contributions"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:SpearDevs/SyliusPushNotificationsPlugin.git"
+        }
+    ],
     "require": {
         "php": "^8.0",
+        "speardevs/sylius-push-notifications-plugin": "v1.0.1-alpha.1",
         "sylius/paypal-plugin": "^1.5",
         "sylius/sylius": "^1.12",
         "symfony/dotenv": "^5.4 || ^6.0",
+        "symfony/flex": "^2.1",
         "symfony/runtime": "^5.4 || ^6.0",
-        "symfony/flex": "^2.1"
+        "symfony/webpack-encore-bundle": "^1.17"
     },
     "require-dev": {
         "behat/behat": "^3.7",
